@@ -2,31 +2,41 @@
   "name": "adopt-me-tut",
   "version": "1.0.0",
   "description": "From https://github.com/btholt/complete-intro-to-react-v5",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [],
+  "homepage": "https://github.com/Ganevru/adopt-me-tut#readme",
+  "bugs": {
+    "url": "https://github.com/Ganevru/adopt-me-tut/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ganevru/adopt-me-tut.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ganevru/adopt-me-tut/issues"
-  },
-  "homepage": "https://github.com/Ganevru/adopt-me-tut#readme",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.8.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1"
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.8.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.0.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1"
   }
 }
