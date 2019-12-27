@@ -3,31 +3,31 @@ import pet, { ANIMALS } from '@frontendmasters/pet';
 import useDropdown from './useDropdown';
 
 const SearchParams = () => {
-  const [location, setLocation] = useState('Seattle, WA');
-  const [breeds, setBreeds] = useState([]);
-  const [animal, AnimalDropdown] = useDropdown('Animals', 'dog', ANIMALS);
-  const [breed, BreedDropdown, setBreed] = useDropdown('breed', '', breeds);
+  const [location, updateLocation] = useState('Seattle, WA');
+  const [breeds, updateBreeds] = useState([]);
+  const [animal, AnimalDropdown] = useDropdown('Animal', 'dog', ANIMALS);
+  const [breed, BreedDropdown, updateBreed] = useDropdown('Breed', '', breeds);
 
   useEffect(() => {
-    setBreeds([]);
-    setBreed('');
+    updateBreeds([]);
+    updateBreed('');
 
     pet.breeds(animal).then(({ breeds }) => {
       const breedStrings = breeds.map(({ name }) => name);
-      setBreeds(breedStrings);
+      updateBreeds(breedStrings);
     }, console.error);
-  }, [animal, setBreed, setBreeds]);
+  }, [animal, updateBreed]);
 
   return (
     <div className="search-params">
-      <form action="">
+      <form>
         <label htmlFor="location">
           Location
           <input
             id="location"
             value={location}
             placeholder="Location"
-            onChange={event => setLocation(event.target.value)}
+            onChange={e => updateLocation(e.target.value)}
           />
         </label>
         <AnimalDropdown />
