@@ -20,13 +20,23 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "import", "jsx-a11y", "react-hooks", "prettier"],
+  "plugins": [
+    "react",
+    "import",
+    "jsx-a11y",
+    "react-hooks",
+    "simple-import-sort",
+    "prettier"
+  ],
   "rules": {
+    "import/order": "off",
     "no-console": "warn",
     "prettier/prettier": "warn",
-    "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/prop-types": 0
+    "react-hooks/rules-of-hooks": "error",
+    "react/prop-types": 0,
+    "simple-import-sort/sort": "warn",
+    "sort-imports": "off"
   },
   "settings": {
     "react": {
