@@ -1,43 +1,37 @@
 {
   "name": "adopt-me-tut",
   "version": "1.0.0",
-  "description": "From https://github.com/btholt/complete-intro-to-react-v5",
-  "keywords": [],
-  "homepage": "https://github.com/Ganevru/adopt-me-tut#readme",
-  "bugs": {
-    "url": "https://github.com/Ganevru/adopt-me-tut/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ganevru/adopt-me-tut.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "main": "index.js",
+  "description": "adopt-me-tut",
+  "license": "Apache-2.0",
+  "main": "src/App.js",
   "scripts": {
-    "start": "parcel src/index.html",
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "@reach/router": "^1.2.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.8.0",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1"
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.0.2",
+    "parcel-bundler": "^1.12.1",
+    "prettier": "^1.16.1"
   }
 }
