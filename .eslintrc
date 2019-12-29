@@ -30,7 +30,7 @@
   ],
   "rules": {
     "import/order": "off",
-    "no-console": "warn",
+    "no-console": "off",
     "prettier/prettier": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
